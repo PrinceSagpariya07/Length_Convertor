@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Length Converter</title>
+</head>
+<body>
+    <form action="" onsubmit="return false">
+        <div class="converter-body">
+            <h1 class="title">Length Converter</h1>
+            <!-- <div class="input-1"> -->
+            <input type="number" placeholder="Input" class="in" id="input1">
+            <span>=</span>
+            <input type="number" placeholder="Result" class="re" id="result1">
+           <!-- </div> -->
+    
+            <br>
+    
+            <select  id="inputType">
+                <option value="meter">Meter</option>
+                <option value="kilometer">Kilometer</option>
+                <option value="centimeter">Centimeter</option>
+            </select>
+    
+            <select  id="resultType">
+                <option value="meter">Meter</option>
+                <option value="kilometer">Kilometer</option>
+                <option value="centimeter">Centimeter</option>
+            </select>
+    
+            <div class="button-div">
+                <!-- <input type="button" class="button1" value="Convert">
+                <input type="reset" class="button2" value="Reset"> -->
+                <button onclick="converter()" class="button1">Convert</button>
+                <button type="reset" class="button2">Reset</button>
+            </div>
+    
+        </div>
+    
+    </form>
+
+    <script type="text/javascript" src="convert.js"></script>
+  
+</body>
+</html>
